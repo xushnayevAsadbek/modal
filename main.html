@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ro'yxatdan o'tish formasi</title>
+  <link rel="stylesheet" href="main.css">
+</head>
+<body>
+  <div class="form-container">
+    <form id="registrationForm">
+      <div class="form-group">
+        <label for="name">Ismingiz</label>
+        <input type="text" id="name" name="name" pattern="[A-Za-z ]{4,}" required>
+      </div>
+      <div class="form-group">
+        <label for="phone">Telefon raqamingiz</label>
+        <div class="phone-input-container">
+          <!-- <img src="uzbekistan-flag.png" alt="O'zbekiston bayrog'i" width="20"> -->
+          
+          <input type="text" id="phone" name="phone" placeholder="+998 99-999-9999" pattern="\d{2}-\d{3}-\d{4}" required>
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="time">Sizga qaysi vaqt oralig'ida qo'ng'iroq qilaylik?</label>
+        <select id="time" name="time" required>
+          <option value="" disabled selected>Vaqt oralig'ini tanlang</option>
+          <option value="10:00">10:00</option>
+          <option value="11:00">11:00</option>
+          <option value="12:00">12:00</option>
+          <option value="13:00">13:00</option>
+          <option value="14:00">14:00</option>
+          <option value="15:00">15:00</option>
+          <option value="16:00">16:00</option>
+          <option value="17:00">17:00</option>
+          <option value="18:00">18:00</option>
+          <option value="19:00">19:00</option>
+          <option value="20:00">20:00</option>
+          
+        </select>
+      </div>
+      <button type="submit" class="btn">Ro'yxatdan o'tish</button>
+      <p class="agreement">Ro‘yxatdan o‘tish tugmasini bosish orqali siz <a href="https://example.com/offer" target="_blank">ommaviy oferta shartlariga</a> rozilik bildirasiz</p>
+    </form>
+  </div>
+  <script src="main.js"></script>
+</body>
+</html>
